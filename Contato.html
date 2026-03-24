@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato</title>
+</head>
+<body>
+    <div id="titulo_primeiro">
+        <h1>O Senhor dos Anéis</h1>
+        <h2>Uma das maiores trilogias da história do cinema </h2>
+        <nav>
+            <a href="index.html" >Início</a>
+            <a href="Sinopse.html" >Sinopse</a> 
+            <a href="imagens.html" >Imagens</a> 
+            <a href="Personagens.html" >Personagens</a> 
+            <a href="OrdemFilmes.html" >Ordem dos filmes</a> 
+            <a href="Informacoes.html" >Informações</a> 
+            <a href="Curiosidades.html" >Curiosidades</a> 
+            <a href="ImpactoCultural.html" >Impacto cultural</a> 
+            <a href="UniversoTerraMedia.html" >Universo da Terra Média</a> 
+            <a href="Contato.html">Contato</a>
+        </nav>
+    </div>
+
+    <h1 class="titulo_secundario">Contato com a Terra Média</h1>
+
+    <p>Envie sua mensagem diretamente para o Conselho de Erlond </p>
+
+    <form action="" method="" autocomplete="off">
+
+        <label for="nomePessoa">Nome na Terra Média: </label>
+        <input type="text" id="nomePessoa" name="nomePessoa" minlength="3" maxlength="15"  placeholder="Ex: Aragon"required><br><br>
+
+        <label for="email">Corvo eletrônico (Email): </label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="anoNascimento">Ano de Nascimento: </label>
+        <input type="number" id="anoNascimento" name="anoNascimento" max="2026" min="1900" required><br><br>
+
+        <fieldset>
+
+            <legend>Qual a sua raça?</legend>
+            <input type="radio" name="Raca" id="Humano" value="Filme 1"><label 
+            for="Humano">Humano</label>
+
+            <input checked type="radio" name="Raca" id="Elfo" value="Filme 2"><label 
+            for="Elfo">Elfo</label>
+
+            <input type="radio" name="Raca" id="Anao" value="Filme 3"><label 
+            for="Anao">Anão</label>
+
+            <input type="radio" name="Raca" id="Hobbit" value="Filme 4"><label 
+            for="Hobbit">Hobbit</label>
+
+         </fieldset><br><br>
+
+        <label for="filmeFavorito">Escolha seu filme favorito:</label>
+        <select id="filmeFavorito" name="filmeFavorito">
+            <option value="A sociedade do anel">A sociedade do anel</option>
+            <option value="As duas torres">As duas torres</option>
+            <option value="O retorno do rei">O retorno do rei</option>
+        </select><br><br><br>
+
+         <select id="lista_suspensa" name="lista">
+            <optgroup label="Reino dos Homens">
+                <option value="Gordon">Gordon</option>
+                <option value="Rohan">Rohan</option>
+
+            </optgroup>
+
+            <optgroup label="Terras Élficas">
+                <option value="Valfenda">Valfenda</option>
+                <option value="Lothlórien">Lothlórien</option>
+            </optgroup>
+
+            <optgroup label="Outros">
+                <option value="Mordor">Mordor</option>
+                <option value="Condado">Condado</option>
+
+            </select><br><br><br>
+
+        
+
+    </form>
+
+</body>
+</html>
