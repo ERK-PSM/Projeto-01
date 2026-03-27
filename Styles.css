@@ -1,6 +1,13 @@
 #titulo_primeiro
-    {background-color: #8b6f1e;color:white}
+    {background-color: #8b6f1e;
+        color:white}
 
 .titulo_secundario
-    {background-color: #2f4f2f;color:white}
-           
+    {background-color: #2f4f2f;
+        color:white}
+
+#layout
+    {display: flex;}
+
+footer
+    {text-align: center;}

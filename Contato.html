@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/espada.ico">
     <title>Contato</title>
 </head>
 <body>
@@ -63,6 +64,7 @@
             <option value="O retorno do rei">O retorno do rei</option>
         </select><br><br><br>
 
+        <label for="Local-terra">Escolha um local da Terra Média:</label>
          <select id="lista_suspensa" name="lista">
             <optgroup label="Reino dos Homens">
                 <option value="Gordon">Gordon</option>
@@ -81,7 +83,41 @@
 
             </select><br><br><br>
 
+            <fieldset>
+            <legend>Suas habilidades</legend>
+            <label><input type="checkbox" name="espada" value="espada">Espada</label>
+            <label><input type="checkbox" name="arcoFlecha" value="arcoFlecha">Arco e flecha</label>
+            <label><input type="checkbox" name="magia" value="magia">Magia</label>
+            <label><input type="checkbox" name="furtividade" value="furtividade">Furtividade Hobbit</label>
+        </fieldset><br><br>
+
         
+        <label for="Nivel">Nivel de coragem (1 a 10):</label>
+        <input type="range" max="10" min="1" id="Nivel" name="Nivel"><br><br><br>
+
+        <label for="Reino"> Seu reino de origem:</label>
+        <input type="text" id="busca_datalist" list="paises">
+        <datalist id="paises">
+            <option>Gordon</option>
+            <option>Rohan</option>
+            <option>Mordor</option>
+            <option>Condado</option>
+        </datalist><br><br><br>
+
+        <label for="cor-manto">Cor do seu manto:</label>
+        <input type="color" id="cor-manto" name="cor-manto"><br><br><br>
+
+        <label for="data">Data da sua jornada:</label>
+        <input type="date" id="data" name="data"> <br><br><br>
+
+        <label for="Arquivo">Anexe uma reliquia</label>
+        <input type="file" id="Arquivo" name="Arquivo"> <br><br><br>
+
+        <label for="mensagemConselho">Mensagem para o Conselho:</label><br>
+        <textarea id="mensagemConselho" name="mensagemConselho" rows="4" cols="50">Escreva sua missão...</textarea> <br><br><br>
+
+        <button type="reset">Apagar Pergaminho</button>
+        <button type="submit">Enviar para Valfenda</button>
 
     </form>
 
