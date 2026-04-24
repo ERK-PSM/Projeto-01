@@ -7,24 +7,8 @@ body{
     font-family: "roboto", sans-serif; /*tipo de fonte*/
     font-size: 16px; /*tamanho da fonte - px/em/rem */
 }
-
-a{
-    color: rgb(255, 255, 255); /*cor de fonte*/
-    text-decoration: none; /*decoração do texto (underline, overline, line-through) */
-}
-
-nav a{
-    background-color: #2f4f2f;
-    color:white;
-    padding: 10px; /*espaçamento interno (top, right, bottom, left) */
-    margin: 5px; /*espaçamento externo (top, right, bottom, left) */
-    display: inline-block; /*exibe o elemento como um bloco em linha */
-}
-
-nav a:hover{
-    background-color: #8b6f1e;
-    color:white;
-    text-decoration: underline wavy; /*decoração do texto (underline, overline, line-through) */
+nav a {
+    text-decoration: none;
 }
 
 #titulo_primeiro{
@@ -43,7 +27,8 @@ nav a:hover{
 
 #layout{
     font-size: 1em; /* responsividade ajuda a arrumar a tela em diferentes tamanhos (em = tamanho X o tamanho do texto do elemento pai; rem - tamanho X tamanho do texto por padrão do navegador )*/
-    display: flex;
+    display: flex; /* Exibe os elementos filhos em um layout flexível */ 
+
     font-style: normal;   /* Estilo da fonte (normal, italic, oblique) */
     line-height: 30px; /* Altura da linha (espaçamento entre linhas) */
     font-weight: 400; /* Negrito em css de 100 a 900 bold e bolder */
@@ -54,6 +39,36 @@ nav a:hover{
     text-indent: 20px; /* Recuo da primeira linha do parágrafo */
     text-align: justify; /* Alinhamento do texto (left, right, center, justify) */
 
+    border: dashed 5px rgb(52, 236, 162); /* border-style border-width border-color */
+    border-top: dotted 10px rgb(100, 200, 53); 
+    border-left: dotted 15px rgb(200, 100, 53);
+    border-bottom: solid 20px rgb(53, 100, 200);
+    border-radius: 50px ; /* Arredondamento dos cantos da borda (valor em px ou %) */
+    /*
+    border-style: dashed; /* Estilo da borda (none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset) 
+    border-width: 16px; /* Largura da borda (thin, medium, thick ou valor em px) 
+    border-color: rgb(52, 236, 162); /* Cor da borda (nome da cor, código hexadecimal ou rgb) 
+    */
+
+    margin: 20px; /* Margem externa (valor em px ou %) */
+    padding: 20px; /* Preenchimento interno (valor em px ou %) */
+    /*
+    margin-top: 20px; Margem superior
+    margin-right: 20px; Margem direita
+    margin-bottom: 20px; Margem inferior 
+    margin-left: 20px; Margem esquerda 
+
+    padding-top: 20px; Preenchimento superior
+    padding-right: 20px; Preenchimento direito
+    padding-bottom: 20px; Preenchimento inferior
+    padding-left: 20px; Preenchimento esquerdo
+    */
+
+}
+
+.teste_display{
+    background-color: orange;
+    display: inline-block; /* Exibe o elemento como um bloco, mas permite que outros elementos fiquem ao lado dele */
 }
 
 footer{
