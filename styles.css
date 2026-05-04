@@ -66,9 +66,64 @@ nav a {
 
 }
 
-.teste_display{
+/*.teste_display{
     background-color: orange;
-    display: inline-block; /* Exibe o elemento como um bloco, mas permite que outros elementos fiquem ao lado dele */
+    display: inline-block;  Exibe o elemento como um bloco, mas permite que outros elementos fiquem ao lado dele 
+}*/
+
+#teste-estilo-lista-ul {
+    list-style-type: square; /* Tipo de marcador para listas não ordenadas (disc, circle, square) */
+}
+
+#teste-estilo-lista-ol { 
+    /* list-style-type: none;  Tipo de marcador para listas ordenadas (decimal, lower-alpha, upper-alpha, lower-roman, upper-roman) */
+    list-style-image: url('img/seta_direita_vermelha.png');
+}
+
+li{
+    border: solid 3px orange;
+    list-style-position: inside; /* Posição do marcador (inside ou outside) */
+}
+
+#impacto{
+    /* background: url(img/senhordosaneis_fundo.jpg) no-repeat center center fixed;  Forma abreviada para definir a imagem de fundo, repetição, posição e comportamento ao rolar a página */
+    background-image: url(img/senhordosaneis_fundo.jpg); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Repetição da imagem de fundo (repeat, no-repeat, repeat-x, repeat-y) */
+    /* background-position: center; /* Posição da imagem de fundo (left, right, top, bottom, center ou coordenadas) 
+       width: 2000px;  Largura do elemento 
+       height: 1500px;  Altura do elemento */
+    background-size: cover; /* Tamanho da imagem de fundo (cover, contain ou valor em px ou %) */
+    background-attachment: fixed; /* Comportamento da imagem de fundo ao rolar a página (scroll, fixed ou local) */
+    /* text-shadow: 3px 3px 2px red;  Sombra do texto (offset-x offset-y blur-radius color) */
+    position: relative; /* Define o tipo de posicionamento do elemento (static, relative, absolute, fixed) */
+}
+
+.noticia{
+    border: solid 3px white;
+    width: 200px;
+    position: fixed; /* Define o tipo de posicionamento do elemento (static, relative, absolute, fixed) */
+    height: 100px;
+    overflow: auto; /* Define como lidar com o conteúdo que ultrapassa as dimensões do elemento (visible, hidden, scroll, auto) */
+    box-shadow: 3px 3px 3px 3px orange ; /* Sombra da caixa (offset-x offset-y blur-radius color) */
+}
+
+.um{
+    background-color: blue;
+    top: 0px; /* Posição do elemento em relação ao seu posicionamento normal (top, right, bottom, left) */
+    left: 50px; 
+    z-index: 3; /* Define a ordem de empilhamento dos elementos (valor numérico, onde elementos com maior valor ficam acima dos elementos com menor valor) */   
+}
+
+.dois {
+    background-color: red;
+    top: 100px;
+    left: 150px;
+}
+
+.tres {
+    background-color: green;
+    top: 200px;
+    left: 250px;
 }
 
 footer{
