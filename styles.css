@@ -9,6 +9,38 @@ body{
 }
 nav a {
     text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: black;
+    opacity: 0.7; /* Opacidade do elemento (valor entre 0 e 1, onde 0 é totalmente transparente e 1 é totalmente opaco) */
+}
+
+.transicao {
+    background-color: white;
+    border: solid 3px red;
+    color: black;
+    width: 300px;
+    height: 300px;
+    transition: all 1s ease; /* Propriedade de transição (propriedade, duração, função de tempo) */
+    /*
+    transition-duration: 3s;  Duração da transição (valor em segundos ou milissegundos) 
+    transition-property: all;  Propriedade a ser animada (all ou nome da propriedade) 
+    tramsition-delay: 0s;  Atraso antes do início da transição (valor em segundos ou milissegundos)
+    transition-timing-function: ease;  Função de tempo da transição (ease, linear, ease-in, ease-out, ease-in-out ou função personalizada) 
+    */
+}
+
+.transicao:hover {
+    background-color: pink;  
+    width: 600px;
+    color: blue;
+}
+
+#email:focus {
+    background-color: green; /* Cor de fundo quando o elemento está em foco */
+    color: white /* Cor do texto quando o elemento está em foco */
 }
 
 #titulo_primeiro{
@@ -105,6 +137,42 @@ li{
     height: 100px;
     overflow: auto; /* Define como lidar com o conteúdo que ultrapassa as dimensões do elemento (visible, hidden, scroll, auto) */
     box-shadow: 3px 3px 3px 3px orange ; /* Sombra da caixa (offset-x offset-y blur-radius color) */
+}
+
+h1{
+    animation-name: multicolor; /* Nome da animação a ser aplicada */
+    animation-duration: 1s; /* Duração da animação (valor em segundos ou milissegundos) */
+    animation-delay: 2s; /* Atraso antes do início da animação (valor em segundos ou milissegundos) */
+    animation-fill-mode: backwards; /* Define o comportamento da animação após sua conclusão (none, forwards, backwards, both) */
+     /* animation-iteration-count: infinite;  Número de vezes que a animação deve ser repetida (valor numérico ou infinite) 
+        animation-direction: alternate;  Direção da animação (normal, reverse, alternate, alternate-reverse) 
+        animation-timing-function: ease;  Função de tempo da animação (ease, linear, ease-in, ease-out, ease-in-out ou função personalizada) */
+    animation-iteration-count: infinite; /* Número de vezes que a animação deve ser repetida (valor numérico ou infinite) */
+}
+
+@keyframes multicolor {
+    /*from { color: red; }
+    to { color: blue; }*/
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: green; }
+}
+
+.animacao img {
+    display: block; /* Exibe o elemento como um bloco, ocupando toda a largura disponível */
+    animation: foguete; /* Nome da animação a ser aplicada */
+    animation-duration: 5s; /* Duração da animação (valor em segundos ou milissegundos) */
+    animation-iteration-count: infinite; /* Número de vezes que a animação deve ser repetida (valor numérico ou infinite) */
+     /* animation-direction: alternate;  Direção da animação (normal, reverse, alternate, alternate-reverse) 
+        animation-timing-function: ease;  Função de tempo da animação (ease, linear, ease-in, ease-out, ease-in-out ou função personalizada) */
+}
+
+@keyframes foguete {
+    0%{margin-left: 0%;}
+    25%{margin-left: 80%; transform: rotate(0deg);}
+    50%{margin-left: 80%; transform: rotate(-120deg);}
+    75%{margin-left: 0%; transform: rotate(-120deg);}
+    100%{margin-left: 0%; transform: rotate(0deg);}
 }
 
 .um{
